@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePilot AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>🚀 CodePilot AI</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Code Review</li>
+      <li>GitHub Analyzer</li>
+      <li>Projects</li>
+      <li>Interview Hub</li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h1>Developer Dashboard</h1>
+      <button>Upgrade Pro</button>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Projects</h3>
+        <p>12</p>
+      </div>
+
+      <div class="card">
+        <h3>GitHub Score</h3>
+        <p>87%</p>
+      </div>
+
+      <div class="card">
+        <h3>Interview Readiness</h3>
+        <p>74%</p>
+      </div>
+
+      <div class="card">
+        <h3>Streak</h3>
+        <p>21 Days</p>
+      </div>
+    </section>
+
+    <section class="review-box">
+      <h2>AI Code Reviewer</h2>
+      <textarea id="codeInput"
+        placeholder="Paste your code here..."></textarea>
+
+      <button onclick="reviewCode()">
+        Analyze Code
+      </button>
+
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
