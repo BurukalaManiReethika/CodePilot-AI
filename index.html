@@ -1,73 +1,82 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodePilot AI</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodePilot AI Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <aside class="sidebar">
-    <h2>🚀 CodePilot AI</h2>
+<div class="sidebar">
+    <div class="logo">
+        🚀 CodePilot AI
+    </div>
+
     <ul>
-      <li>Dashboard</li>
-      <li>Code Review</li>
-      <li>GitHub Analyzer</li>
-      <li>Projects</li>
-      <li>Interview Hub</li>
+        <li>🏠 Dashboard</li>
+        <li>🤖 AI Reviewer</li>
+        <li>📊 Analytics</li>
+        <li>💼 Resume Analyzer</li>
+        <li>🎯 Interview Hub</li>
+        <li>⚙ Settings</li>
     </ul>
-  </aside>
+</div>
 
-  <main class="content">
-    <header>
-      <h1>Developer Dashboard</h1>
-      <button>Upgrade Pro</button>
-    </header>
+<div class="main">
 
-    <section class="cards">
-      <div class="card">
-        <h3>Projects</h3>
-        <p>12</p>
-      </div>
+    <div class="hero">
+        <h1>CodePilot AI Pro</h1>
+        <p>Analyze Code • Improve Skills • Build Better Projects</p>
+        <button>Upgrade Pro</button>
+    </div>
 
-      <div class="card">
-        <h3>GitHub Score</h3>
-        <p>87%</p>
-      </div>
+    <div class="cards">
 
-      <div class="card">
-        <h3>Interview Readiness</h3>
-        <p>74%</p>
-      </div>
+        <div class="card">
+            <h3>Projects</h3>
+            <h2 id="projects">0</h2>
+        </div>
 
-      <div class="card">
-        <h3>Streak</h3>
-        <p>21 Days</p>
-      </div>
-    </section>
+        <div class="card">
+            <h3>GitHub Score</h3>
+            <h2 id="github">0%</h2>
+        </div>
 
-    <section class="review-box">
-      <h2>AI Code Reviewer</h2>
-      <textarea id="codeInput"
+        <div class="card">
+            <h3>Interview Ready</h3>
+            <h2 id="interview">0%</h2>
+        </div>
+
+        <div class="card">
+            <h3>Streak</h3>
+            <h2 id="streak">0</h2>
+        </div>
+
+    </div>
+
+    <div class="review-box">
+
+        <h2>🤖 AI Code Reviewer</h2>
+
+        <textarea
+        id="codeInput"
         placeholder="Paste your code here..."></textarea>
 
-      <button onclick="reviewCode()">
-        Analyze Code
-      </button>
+        <button onclick="reviewCode()">
+            Analyze Code
+        </button>
 
-      <div id="result"></div>
-    </section>
-  </main>
-  <button onclick="reviewCode()">
-  Analyze Code
-</button>
+        <div id="result"></div>
 
-  <script src="script.js"></script>
-  <div class="glass-card">
-    <h3>GitHub Score</h3>
-    <h1>92%</h1>
-    <span>+12% this month</span>
+    </div>
+
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
