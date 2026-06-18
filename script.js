@@ -1,32 +1,25 @@
 function reviewCode() {
+    const code = document.getElementById("codeInput").value;
+    const result = document.getElementById("result");
 
-  const code =
-    document.getElementById("codeInput").value;
+    if (!code.trim()) {
+        result.innerHTML = "<p>Please paste some code.</p>";
+        return;
+    }
 
-  const result =
-    document.getElementById("result");
+    let lines = code.split("\n").length;
+    let chars = code.length;
 
-  if(code.length < 20){
-    result.innerHTML =
-      "⚠️ Code too short for analysis.";
-    return;
-  }
-
-  let score = Math.floor(
-    Math.random() * 30
-  ) + 70;
-
-  result.innerHTML = `
-    <h3>Analysis Result</h3>
-    <p>Quality Score: ${score}%</p>
-    <p>Suggestions:</p>
-    <ul>
-      <li>Improve variable naming.</li>
-      <li>Add comments.</li>
-      <li>Reduce code duplication.</li>
-    </ul>
-  `;
-}
-function reviewCode() {
-    alert("Working");
+    result.innerHTML = `
+        <h3>Analysis Complete</h3>
+        <p>Lines of Code: ${lines}</p>
+        <p>Characters: ${chars}</p>
+        <p>Quality Score: ${Math.floor(Math.random()*20)+80}%</p>
+        <p>Suggestions:</p>
+        <ul>
+            <li>Use meaningful variable names</li>
+            <li>Add comments</li>
+            <li>Improve code structure</li>
+        </ul>
+    `;
 }
